@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	cursor: url("cursors/cursor.cur"), auto;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
 	background-color: #C0C0C0;
 	order: 2;
 	display: flex;
-	padding: 2px 1px 1px 1px;
+	padding: 3px 3px 1px 1px;
 }
 
 #menu-bar {
@@ -41,11 +42,11 @@ body {
 .bar-button {
 	padding-left: 21px;
 	padding-right: 2px;
-    cursor: pointer;
-    border-top: solid 2px #eaeaea;
-    border-left: solid 2px #eaeaea;
-    border-bottom: solid 2px #777;
-    border-right: solid 2px #777;
+	margin-left: 2px;
+    border-top: solid 1px #ffffff;
+    border-left: solid 1px #ffffff;
+    border-bottom: solid 2px #000000;
+    border-right: solid 2px #000000;
 }
 
 #start-button {
@@ -54,9 +55,8 @@ body {
 }
 
 .bar-button-down {
-	background: #bbb;
     border-top: solid 2px #777;
     border-left: solid 2px #777;
-    border-bottom:solid 2px  #eaeaea;
-    border-right: solid 2px #eaeaea;
+    border-bottom:solid 1px  #eaeaea;
+    border-right: solid 1px #eaeaea;
 }
