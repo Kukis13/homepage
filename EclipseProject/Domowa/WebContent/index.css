@@ -68,6 +68,7 @@ body {
 .icon {
 	margin: 8px;
 	width: 72px;
+	text-align:center;
 }
 
 .icon img {
