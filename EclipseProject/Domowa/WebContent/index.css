@@ -1,6 +1,7 @@
 html, body {
 	height: 100%;
 	cursor: url("cursors/cursor.cur"), auto;
+	font-family: px_sans_nouveaux,Arial,Helvetica,sans-serif;
 }
 
 body {
@@ -59,4 +60,14 @@ body {
     border-left: solid 2px #777;
     border-bottom:solid 1px  #eaeaea;
     border-right: solid 1px #eaeaea;
+}
+
+#ico-my-computer{
+	
+}
+#ico-trash{
+	
+}
+#ico-ie{
+	
 }
