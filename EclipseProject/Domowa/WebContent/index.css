@@ -20,6 +20,9 @@ body {
 #desktop {
 	order: 1;
 	height: 100%;
+	padding: 3px;
+	color: white;
+	font-size: 12px;
 }
 
 #lower-bar {
@@ -62,9 +65,19 @@ body {
     border-right: solid 1px #eaeaea;
 }
 
-#ico-my-computer{
-	
+.icon {
+	margin: 8px;
+	width: 72px;
 }
+
+.icon img {
+	display: block;
+	margin: auto;
+}
+
+#ico-my-computer{
+}
+
 #ico-trash{
 	
 }
