@@ -20,9 +20,52 @@ body {
 	height: 100%;
 }
 
-#lowerbar {
-	height: 28px;
-	width: 100%;
+#lower-bar {
 	background-color: #C0C0C0;
 	order: 2;
+	display: flex;
+	padding: 2px 1px 1px 1px;
+}
+
+#menu-bar {
+}
+
+#task-bar {
+	
+}
+
+#status-bar {
+	
+}
+
+.bar-button {
+	padding-left: 21px;
+	padding-right: 2px;
+    cursor: pointer;
+    border-top: solid 2px #eaeaea;
+    border-left: solid 2px #eaeaea;
+    border-bottom: solid 2px #777;
+    border-right: solid 2px #777;
+}
+
+#start-button {
+	font-weight: bold;
+	background: url(images/start-icon.png) no-repeat 0% 66%;
+}
+
+.down {
+	background: #bbb;
+    border-top: solid 2px #777;
+    border-left: solid 2px #777;
+    border-bottom:solid 2px  #eaeaea;
+    border-right: solid 2px #eaeaea;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
