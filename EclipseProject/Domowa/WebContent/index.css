@@ -1,0 +1,28 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background-size: cover;
+	background-color: #007E7D;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-moz-background-size: cover;
+	margin: 0px;
+	display: flex;
+	flex-flow: column;
+}
+
+#desktop {
+	order: 1;
+	height: 100%;
+}
+
+#lowerbar {
+	height: 28px;
+	width: 100%;
+	background-color: #C0C0C0;
+	order: 2;
+}
