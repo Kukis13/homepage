@@ -1,7 +1,7 @@
 html, body {
 	height: 100%;
 	cursor: url("cursors/cursor.cur"), auto;
-	font-family: px_sans_nouveaux,Arial,Helvetica,sans-serif;
+	font-family: px_sans_nouveaux, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -32,25 +32,14 @@ body {
 	padding: 3px 3px 1px 1px;
 }
 
-#menu-bar {
-}
-
-#task-bar {
-	
-}
-
-#status-bar {
-	
-}
-
 .bar-button {
 	padding-left: 21px;
 	padding-right: 3px;
 	margin-left: 2px;
-    border-top: solid 1px #ffffff;
-    border-left: solid 1px #ffffff;
-    border-bottom: solid 2px #000000;
-    border-right: solid 2px #000000;
+	border-top: solid 1px #ffffff;
+	border-left: solid 1px #ffffff;
+	border-bottom: solid 2px #000000;
+	border-right: solid 2px #000000;
 }
 
 #start-button {
@@ -59,16 +48,16 @@ body {
 }
 
 .bar-button-down {
-    border-top: solid 2px #777;
-    border-left: solid 2px #777;
-    border-bottom:solid 1px  #eaeaea;
-    border-right: solid 1px #eaeaea;
+	border-top: solid 2px #777;
+	border-left: solid 2px #777;
+	border-bottom: solid 1px #eaeaea;
+	border-right: solid 1px #eaeaea;
 }
 
 .icon {
 	margin: 8px;
 	width: 72px;
-	text-align:center;
+	text-align: center;
 }
 
 .icon img {
@@ -76,12 +65,12 @@ body {
 	margin: auto;
 }
 
-#ico-my-computer{
+.icon-marked img{
+	background-color: darkblue;
+	opacity: 0.5;
 }
 
-#ico-trash{
-	
-}
-#ico-ie{
-	
+.icon-marked span {
+	background-color: darkblue;
+	border: dotted 1px;
 }
