@@ -74,3 +74,8 @@ body {
 	background-color: darkblue;
 	border: dotted 1px;
 }
+
+.icon-text-editable span {
+	background-color: white;
+	color: black;
+}
