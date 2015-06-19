@@ -11,6 +11,14 @@ function removeAd() {
 }
 
 function registerClickListeners() {
+	$('body').click(function() {
+		var icons = $('.icon');
+		for (i = 0; i < icons.length; i++) {
+			$(icons[i]).removeClass('icon-marked');
+			$(icons[i]).removeClass('icon-text-editable');
+			$(icons[i]).find('span').attr('contentEditable', false);
+		}
+	});
 	$('#start-button').click(function() {
 		$(this).toggleClass("bar-button-down");
 	});
@@ -21,6 +29,7 @@ function registerClickListeners() {
 			if (icons[i] != this) {
 				$(icons[i]).removeClass('icon-marked');
 				$(icons[i]).removeClass('icon-text-editable');
+				$(icons[i]).find('span').attr('contentEditable', false);
 			}
 		}
 		$(this).toggleClass("icon-marked");
@@ -29,5 +38,6 @@ function registerClickListeners() {
 			$(e.target).focus();
 			$(this).addClass('icon-text-editable');
 		}
+		e.stopPropagation();
 	})
 }
