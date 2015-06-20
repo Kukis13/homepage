@@ -14,27 +14,38 @@ function openSelector(e) {
 		'left' : Math.min(e.pageX, initialW),
 		'top' : Math.min(e.pageY, initialH)
 	});
+	
+	selectElements(e);
 }
 
 
 function selectElements(e) {
+    var maxX = 0;
+    var minX = 5000;
+    var maxY = 0;
+    var minY = 5000;
+    var totalElements = 0;
+    var elementArr = new Array();
+    $("#desktop .icon").each(function () {
+        var aElem = $(".ghost-select");
+        var bElem = $(this);
+        var collision = doObjectsCollide(aElem, bElem);
+        if(collision){
+    		$(this).addClass("icon-marked");
+        }
+        else{
+    		$(this).removeClass("icon-marked");
+        }
+    });
+   
+}
+
+function afterMouseUp(e){
     $(document).unbind("mousemove", openSelector);
-    $(document).unbind("mouseup", selectElements);
-//    var maxX = 0;
-//    var minX = 5000;
-//    var maxY = 0;
-//    var minY = 5000;
-//    var totalElements = 0;
-//    var elementArr = new Array();
-//    $("#desktop .icon").each(function () {
-//        var aElem = $(".ghost-select");
-//        var bElem = $(this);
-//        var result = doObjectsCollide(aElem, bElem);
-//        console.log(result);
-//    });
-//   
-      $(".ghost-select").removeClass("ghost-active");
-//    $(".ghost-select").width(0).height(0);
+    $(document).unbind("mouseup", afterMouseUp);
+
+    $(".ghost-select").removeClass("ghost-active");
+    $(".ghost-select").width(0).height(0);
 }
 
 function doObjectsCollide(a, b) { // a and b are your objects

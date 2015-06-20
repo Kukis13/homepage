@@ -53,15 +53,13 @@ function registerClickListeners() {
 		$(".ghost-select").addClass("ghost-active");
 		$(".ghost-select").css({
 			'left' : e.pageX,
-			'top' : e.pageY,
-			'width' : 0,
-			'height' : 0
+			'top' : e.pageY
 		});
 
 		initialW = e.pageX;
 		initialH = e.pageY;
 
-		$(document).bind("mouseup", selectElements);
 		$(document).bind("mousemove", openSelector);
+        $(document).bind("mouseup", afterMouseUp);
 	});
 }
