@@ -40,4 +40,28 @@ function registerClickListeners() {
 		}
 		e.stopPropagation();
 	})
+
+	$("#desktop").mousedown(function(e) {
+
+		var underElement = document.elementFromPoint(e.pageX, e.pageY);
+		if ($(underElement).hasClass('icon') || $(underElement).parent().hasClass('icon')) {
+			return;
+		}
+		else{
+			$('body').click();
+		}
+		$(".ghost-select").addClass("ghost-active");
+		$(".ghost-select").css({
+			'left' : e.pageX,
+			'top' : e.pageY,
+			'width' : 0,
+			'height' : 0
+		});
+
+		initialW = e.pageX;
+		initialH = e.pageY;
+
+		$(document).bind("mouseup", selectElements);
+		$(document).bind("mousemove", openSelector);
+	});
 }
