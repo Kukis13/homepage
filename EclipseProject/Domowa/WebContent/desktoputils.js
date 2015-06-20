@@ -61,3 +61,12 @@ function doObjectsCollide(a, b) { // a and b are your objects
         (aLeft > (bLeft + b.width()))
     );
 }
+
+function resetIcons(){
+	var icons = $('.icon');
+	for (i = 0; i < icons.length; i++) {
+		$(icons[i]).removeClass('icon-marked');
+		$(icons[i]).removeClass('icon-text-editable');
+		$(icons[i]).find('span').attr('contentEditable', false);
+	}
+}
