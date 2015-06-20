@@ -39,7 +39,11 @@ function registerClickListeners() {
 			$(this).addClass('icon-text-editable');
 		}
 		e.stopPropagation();
-	})
+	});
+	
+	$('.icon').dblclick(function(e){
+		openApplication(e);
+	});
 
 	$("#desktop").mousedown(function(e) {
 
@@ -62,4 +66,7 @@ function registerClickListeners() {
 		$(document).bind("mousemove", openSelector);
         $(document).bind("mouseup", afterMouseUp);
 	});
+}
+
+function openApplication(e){
 }

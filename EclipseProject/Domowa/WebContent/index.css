@@ -80,6 +80,12 @@ body {
 	color: black;
 }
 
+#ico-cv{
+	top: 0px;
+	left: 400px;
+	position: absolute;
+}
+
 .ghost-select {
   display: none;
   z-index: 1000;
